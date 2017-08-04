@@ -1,0 +1,26 @@
+{
+  "name": "cftest",
+  "version": "1.0.0",
+  "description": "Crowdflower",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -f ./data/*.json && mocha && rm -f ./data/*.json",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "csvtojson": "^1.1.7",
+    "express": "^4.15.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0"
+  }
+}
